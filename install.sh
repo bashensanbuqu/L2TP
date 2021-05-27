@@ -233,16 +233,16 @@ preinstall_l2tp(){
 
     #echo "请输入预共享密钥:"
     #read -p "(默认预共享密钥: Bill_888):" mypsk
-    [ -z ${mypsk} ] && mypsk="Bill_888"
+    [ -z ${mypsk} ] && mypsk="bashen"
 
     #echo "请输入用户名:"
     #read -p "(默认用户名: Bill_888):" username
-    [ -z ${username} ] && username="Bi"
+    [ -z ${username} ] && username="bashen"
 
     #password=`rand`
     #echo "请输入 ${username}'s 密码:"
     #read -p "(默认密码: ${password}):" tmppassword
-    [ ! -z ${tmppassword} ] && password=${tmppassword}
+    [ ! -z ${tmppassword} ] && password="bashen"
 
     echo
     echo "ServerIP:${IP}"
@@ -251,7 +251,7 @@ preinstall_l2tp(){
     echo "PSK:${mypsk}"
     echo
     echo "Press any key to start... or press Ctrl + C to cancel."
-    char=`get_char`
+    #char=`get_char`
 
 }
 
